@@ -16,7 +16,7 @@ Lógica de Programação é a técnica de desenvolver sequências lógicas para 
  
  ![imagem codigo visualG](https://lh6.googleusercontent.com/-X_OoO5pzdiw/TXpWw7B8KJI/AAAAAAAAALg/Fnt_sMGuWEE/w1200-h630-p-k-no-nu/visualg.png)
  
-### Aprenda lógica de programação também!
+### Aprenda lógica de programação também:
  
  
  
