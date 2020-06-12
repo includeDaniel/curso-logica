@@ -36,9 +36,9 @@ Inicio
       
       
       
-      EscrevaL(" A soma da diagonal principal é de", sDP)
-      EscrevaL(" O Produto dos valores da 2 linha é", p2L)
-      EscrevaL(" O maio numero da terceira coluna é", m3C)
+      EscrevaL(" A soma da diagonal principal Ã© de", sDP)
+      EscrevaL(" O Produto dos valores da 2 linha Ã©", p2L)
+      EscrevaL(" O maio numero da terceira coluna Ã©", m3C)
 
 
 Fimalgoritmo
