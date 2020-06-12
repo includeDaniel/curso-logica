@@ -7,7 +7,7 @@ Var
 Inicio
       Para l <- 1 ate 3 faca
            Para c <- 1 ate 2 faca
-           Escreva(" Digite um valor da posiçao: [ ", l,",",  c ,"]")
+           Escreva(" Digite um valor da posiÃ§ao: [ ", l,",",  c ,"]")
            Leia(Mat[l, c])
            
            FimPara
