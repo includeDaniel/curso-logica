@@ -1,4 +1,4 @@
-Algoritmo "semnome"
+Algoritmo "Maior peso"
 
 Var
    I :inteiro
