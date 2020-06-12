@@ -1,5 +1,5 @@
-Algoritmo "semnome"
-// Disciplina  :  [Linguagem e Lógica de Programação] 
+Algoritmo "Jogo da velha"
+// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o] 
 // Professor   : Antonio Carlos Nicolodi 
 
 Var
@@ -31,7 +31,7 @@ inicio
    senao
       XouO <- "X"
    Fimse
-   Escreva("Vai jogar ",XouO," em qual posição? ")
+   Escreva("Vai jogar ",XouO," em qual posiÃ§Ã£o? ")
    Leia(posicao)
    
    MarcaJogada(XouO)
