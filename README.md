@@ -1,4 +1,4 @@
-# Softwares:
+# Softwares
 
 1. Dissecando-matriz.alg
 2. Matriz.alg
@@ -10,7 +10,7 @@
 8. Torneio.alg
  
 ## 1. Dissecando-matriz.alg
-O arquivo Dissecando-matriz.alg solicita 16 valores, para montar uma matriz 4X4 e logo em seguida mostra 5 opções, são elas: 
+O algoritmo Dissecando-matriz.alg solicita 16 valores, para montar uma matriz 4X4 e logo em seguida mostra 5 opções, são elas: 
 1. Mostrar a matriz
 2. Diagonal Principal 
 3. Triângulo superior 
@@ -86,7 +86,7 @@ FimProcedimento
 ```
 ## 2. Matriz.alg
 
-O arquivo Matriz.alg solicita 16 valores, para montar uma matriz 4X4 e logo em seguida mostra 3 informações, são elas: 
+O algoritmo Matriz.alg solicita 16 valores, para montar uma matriz 4X4 e logo em seguida mostra 3 informações, são elas: 
 
 1. A soma da diagonal principal
 2. O produto dos valores da 2 linha
@@ -144,27 +144,31 @@ FimPara
 
 ## 3. Contagem-inteligente.alg 
 
-O arquivo Contagem-inteligente.alg .alg solicita 16 valores, para montar uma matriz 4X4 e logo em seguida mostra 3 informações, são elas:
+O algoritmo Contagem-inteligente.alg solicita 2 valores, início e fim
 
+* Se o início for menor que o fim, então o algoritmo irá contar de forma decrescente 
 
-O arquivo Contagem-inteligente.alg te pergunta o inicio da contagem e o fim da contagem, e executa a contagem.
+* Se o início for maior que o fim, então o algoritmo irá contar de forma crescente 
+
+* Se o início for igual ao fim, então só aparecerá o valor digitado na tela
 
 ### Procedimento Contagem()
 O procedimento Contagem() mostra a estrutura gráfica do algoritmo:
 
 ````
-Procedimento Contagem()
-Inicio
-      EscrevaL("Contagem Inteligente ")
-      EscrevaL("-------------------- ")
-      Escreva("Inicio ")
-      Leia(I)
-      Escreva("Fim ")
-      Leia(F)
-      EscrevaL("  ------------ ")
-      EscrevaL("    CONTANDO ")
-      EscrevaL("  ------------ ")
-FimProcedimento
+Se (I <= F) entao
+   Enquanto (I <= F) faca
+      EscrevaL (I)
+      I <- I + 1
+   FimEnquanto
+Senao
+   Se (I >= F) entao
+      Enquanto (I >= F) faca
+      EscrevaL (I)
+      I <- I - 1
+      FimEnquanto
+   Fimse
+Fimse
 
 ````
 ## 4. Jogo-da-velha.alg
