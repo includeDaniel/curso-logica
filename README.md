@@ -1,4 +1,4 @@
-# Arquivos:
+# Softwares:
 
 1. Dissecando-matriz.alg
 2. Matriz.alg
@@ -10,10 +10,15 @@
 8. Torneio.alg
  
 ## 1. Dissecando-matriz.alg
-O arquivo DissecandoMatriz.alg te pergunta 16 valores, e logo em seguida aparece 5 opções, são elas: Mostrar a matriz, Diagonal Principal, Triangulo superior, Trianguo inferior e sair.
+O arquivo Dissecando-matriz.alg solicita 16 valores, para montar uma matriz 4X4 e logo em seguida mostra 5 opções, são elas: 
+1. Mostrar a matriz
+2. Diagonal Principal 
+3. Triângulo superior 
+4. Triângulo inferior
+5. Sair
  
 ### Procedimento MostraMatriz()
-O procedimento MostraMatriz é mostrar todos elementos de uma matriz 4X4 conforme código abaixo
+O procedimento MostraMatriz mostrará todos elementos da matriz 4X4 conforme código abaixo
 
 ```
 Procedimento MostraMatriz()
@@ -28,7 +33,7 @@ FimProcedimento
 
 ```
 ### Procedimento DiagonalPrincipal()
-O procedimento DiagonalPrincipal exibe a diagonal principal de uma matriz 4X4, a digonal principal é ....
+O procedimento DiagonalPrincipal exibe a diagonal principal da matriz 4X4
 
 ```
 Procedimento DiagonalPrincipal()
@@ -43,7 +48,7 @@ inicio
 FimProcedimento
 ```
 ### Procedimento TrianguloSuperior()
-O procedimento TrianguloSuperior exibe o triangulo superior na matriz 4X4, o tringulo superior é ....
+O procedimento TrianguloSuperior exibe o triângulo superior da matriz 4X4
 
 ```
  Procedimento TrianguloSuperior()
@@ -64,7 +69,7 @@ FimProcedimento
 
 ```
 ### Procedimento TrianguloInferior()
-O procedimento TrianguloInferior exibe o triangulo inferior na matriz 4X4, o triangulo inferior é ....
+O procedimento TrianguloInferior exibe o triângulo inferior da matriz 4X4
 
 ```
 Procedimento TrianguloInferior()
@@ -81,9 +86,67 @@ FimProcedimento
 ```
 ## 2. Matriz.alg
 
-O arquivo Matriz.alg te pergunta 16 valores para o usuarios para criar a matriz na tela, quando exibida também será exibido a soma da diagonal da matriz, o produto dos valores da 2 linha da matriz e o maior numero da terceira coluna.
+O arquivo Matriz.alg solicita 16 valores, para montar uma matriz 4X4 e logo em seguida mostra 3 informações, são elas: 
+
+1. A soma da diagonal principal
+2. O produto dos valores da 2 linha
+3. O maior número da terceira coluna
+
+### Montando a soma da diagonal principal 
+
+Para obter a soma da diagonal principal basta comparar a linha com a coluna "(l == c)" se elas forem iguais então o software irá somar o valor da matriz nesta linha e coluna a variável "sDP".
+
+```
+sDP <- 0
+
+Para l <- 1 ate 4 faca
+   Para C <- 1 ate 4 faca
+      Escreva(" Digite um valor : [", l,",", c,"]")
+      Leia(M[L, C])
+      Se (l = c) entao
+         sDP <- (sDP + M[l, c])
+      Fimse
+   FimPara
+FimPara
+
+```
+
+### Montando o produto dos valores da 2 linha 
+
+Para obter o produto dos valores da 2 linha basta iterar de 1 a 4 na coluna mantendo 2 fixo na linha guardando o produto na variável "p2L"
+
+```
+p2L <- 1
+
+Para c <- 1 ate 4 faca
+   p2L <- p2L * m[2, C]
+FimPara
+
+```
+
+
+### Montando o maior número da terceira coluna 
+
+Para obter o maior número da terceira coluna basta pegar o primeiro elemento "1,3" e comparar com os demais elementos da coluna 3, se algum for maior basta coloca-lo na variável "m3C"
+
+```
+m3C <- 0
+
+Para  l <- 1 ate 4 faca
+   Para l <- 1 ate 4 faca
+      Se(M[l,3]) > (m3c) entao
+         m3C <- M[l,3]
+      FimSe
+   FimPara
+FimPara
+
+```
 
 ## 3. Contagem-inteligente.alg 
+
+O arquivo Contagem-inteligente.alg .alg solicita 16 valores, para montar uma matriz 4X4 e logo em seguida mostra 3 informações, são elas:
+
+
 O arquivo Contagem-inteligente.alg te pergunta o inicio da contagem e o fim da contagem, e executa a contagem.
 
 ### Procedimento Contagem()
