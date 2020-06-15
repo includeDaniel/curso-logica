@@ -448,9 +448,13 @@ Inicio
       Fimse
 FimFuncao
 
-`````
+````
 ## 6. Maior-peso.alg
-O arquivo Maior-peso.alg pede que digite 1 nome e 1 peso 5 vezes e vai atualizando em tempo real o maior peso, no final do algoritmo mostra o nome da pessoa e o peso.
+O algoritmo solicita um nome e um peso 5 vezes, no final aparece qual o maior o nome que foi atribuído o maior peso
+
+* O algoritmo atualiza em tempo real na parte superior da tela qual o maior peso digitado até então
+
+* O algoritmo te retorna o nome que teve o maior peso atribuído independente do tamanho, ordem e etc...
 
 ### Procedimento Topo()
 O procedimento Topo() mostra a estrutura gráfica da parte de cima que atualiza em tempo real o peso da pessoa
@@ -468,10 +472,67 @@ FimProcedimento
 
 ````
 ## 7. Notas-escola.alg
-O arquivo Notas-escola.alg pede o gabarito da prova para o usuario no começo, e depois pede o nome de 3 alunos e seus gabaritos no final mostra a pontuação do aluno e a media da turma(no caso os 3 alunos).
+O algoritmo solicita o gabarito da prova, e com  base nos dados que serão digitados em seguida, ele retorna a nota de todos alunos com base no valor de cada questão e também retorna a média da turma
 
+* O algoritmo solicita o gabarito
+
+* O algoritmo solicita nomes de 3 alunos e seus gabaritos, para comparar com o gabarito da prova 
+
+* Ele conclui retornando a nota dos alunos e a media da turma com base em cada questão valer 2 pontos
+
+### Verificando respostas e gabarito
+Verifica se as repostas dos alunos é igual ao gabarito, se sim ele ganha +2 na variavel acertos
+
+```
+ACERTOS:Vetor [1..3] de inteiro
+GABARITO:Vetor [1..5] de caractere
+RESPOSTA:Vetor [1..3, 1..5] de caractere
+R: inteiro
+I: inteiro
+
+Para R <- 1 ate 5 faca
+   Escreva(" Questao ", R, ":")
+   Leia(RESPOSTA[I,R])
+      SE(RESPOSTA[I,R] = GABARITO[R]) ENTAO
+         ACERTOS[I] <- (ACERTOS[I] +2)
+      FIMSE
+FimPara
+
+```
+### Montando a média dos alunos
+A variável TotAcertos recebe ela mesma somando todos os acertos dos alunos e divindo pelo número de alunos para retornar a média 
+
+```
+ACERTOS:Vetor [1..3] de inteiro
+Totacertos: real
+ 
+TotAcertos <- TotAcertos + (ACERTOS[1] + ACERTOS[2] + ACERTOS [3]) / 3
+
+```
 ## 8. Torneio.alg
-O arquivo Torneio.alg solicita o nome de 3 times, e faz uma tabela mostrando os jogos de forma que todos jogam contra todos 2 vezes.
+O algoritmo Torneio.alg solicita o nome de 3 times, e faz uma tabela de jogos entre eles
+
+* Todos jogam contra todos os jogos de ida e volta
+
+### Montando a tabela dos jogos 
+O array T recebe 3 espaços e se o contador for menor que 3 então ele vai atribuír 1 no valor do conteúdo do array
+
+```
+T: vetor [1..3] de  caractere
+AUX : caractere
+C, : inteiro
+
+ Para C <- 1 ate 3 faca
+   Escreval(T[1], "   []  X  []   ", T[2])
+   Escreval(T[1], "   []  X  []   ", T[3])
+   Se C < 3 entao
+      AUX <- T[1]
+      T[1] <- T[C+1]
+      T[C+1] <- AUX
+   fimse
+FimPara
+
+```
 
 
 
