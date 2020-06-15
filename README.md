@@ -172,7 +172,14 @@ Fimse
 
 ````
 ## 4. Jogo-da-velha.alg
-O arquivo Jogo-da-velha.alg exibe na tela uma matriz 3X3 e numera ela de 1 ate 9, então ele te pergunta onde você quer jogar o "X" e depois a "O" e assim por diante, ele detecta quando o jogador vence e também quando da velha.
+O algoritmo jogo-da-velha.alg solicita um número correspondente a posição na matriz 3X3, para que seja indentificada a posição da jogada
+
+* O algoritmo verifica todas as possibilidades de vitória a cada jodada
+
+* O algoritmo verifica a possibilidade de velha por meio do número de jogadas
+
+* O algoritmo verifica se o número da jogada ja foi digitado, se sim a jogada é repetida
+
 
 ### Procedimento mostraJogo()
 O procedimento mostraJogo() exibe a estrutura gráfica do algoritmo :
@@ -390,7 +397,7 @@ FimProcedimento
 ````
 
 ### Procedimento jogo()
-O procedimento jogo() engloba tudo e conta as jogadas para veririficar se deu velha.
+O procedimento jogo() engloba tudo e conta as jogadas para verificar se deu velha.
 
 ````
 Procedimento Jogo()
@@ -420,8 +427,12 @@ inicio
 FimProcedimento
 
 ````
-## 5. Par-ou-Impar.alg
-O arquivo Par-ou-Impar.alg pede que seja digitado um número e verifica se o número é par ou ímpar.
+## 5. Par-ou-impar.alg
+O algoritmo Par-ou-impar.alg solicita um número, e verifica se este número é par ou ímpar
+
+* Se ele for par, aparece que este número é um valor par
+
+* Se ele for ímpar aparece que este número é um valor ímpar
 
 ### Função ParouImpar(Y:inteiro):caractere
 A função ParouImpar verifica se o número é par ou ímpar.

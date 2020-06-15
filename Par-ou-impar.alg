@@ -9,7 +9,7 @@ Inicio
       Se Y%2 = 0 entao
            Retorne "PAR"
       Senao
-           Retorne "IMPAR"
+           Retorne "ÍMPAR"
       Fimse
 FimFuncao
 

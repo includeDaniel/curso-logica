@@ -31,7 +31,7 @@ inicio
    senao
       XouO <- "X"
    Fimse
-   Escreva("Vai jogar ",XouO," em qual posição? ")
+   Escreva("Vai jogar ",XouO," em qual posição ?")
    Leia(posicao)
    
    MarcaJogada(XouO)
